@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/app_name"
+    tools:context=".MainActivity">
+
+
+    <android.widget.LinearLayout
+        android:id="@+id/LStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LP"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IStatus"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/Status"
+            app:srcCompat="@drawable/status2" />
+
+        <TextView
+            android:id="@+id/TStatus"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible"
+            android:text="@string/Status" />
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/LTech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LH"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ITech"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/Technology"
+            app:srcCompat="@drawable/status1" />
+
+        <TextView
+            android:id="@+id/TTech"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible"
+            android:text="Tech" />
+
+        <TextView
+            android:id="@+id/Tech"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/LTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ITemp"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/Temperature"
+            app:srcCompat="@drawable/temp" />
+
+        <TextView
+            android:id="@+id/TTemp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="visible"
+            android:text="@string/Temperature" />
+
+        <TextView
+            android:id="@+id/Temp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/LLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LTemp"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ILevel"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/Status"
+            app:srcCompat="@drawable/level" />
+
+        <TextView
+            android:id="@+id/TLevel"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible"
+            android:text="@string/Level" />
+
+        <TextView
+            android:id="@+id/Level"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/LV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LLevel"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IV"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/Voltage"
+            app:srcCompat="@drawable/volt" />
+
+        <TextView
+            android:id="@+id/TV"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible"
+            android:text="@string/Voltage" />
+
+        <TextView
+            android:id="@+id/Vl"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/LH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LV"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IH"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/Health"
+            app:srcCompat="@drawable/health" />
+
+        <TextView
+            android:id="@+id/TH"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible"
+            android:text="@string/Health" />
+
+        <TextView
+            android:id="@+id/Hl"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/LP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LTech"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IP"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/Plug"
+            app:srcCompat="@drawable/plug" />
+
+        <TextView
+            android:id="@+id/TP"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible"
+            android:text="@string/Plug" />
+
+        <TextView
+            android:id="@+id/Pl"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+
+    </android.widget.LinearLayout>
+</android.widget.RelativeLayout>

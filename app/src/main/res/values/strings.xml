@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Battery</string>
+    <string name="Status">Status</string>
+    <string name="Level">Level</string>
+    <string name="Technology">Technology</string>
+    <string name="Voltage">Voltage</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Health">Health</string>
+    <string name="Plug">Plug</string>
+</resources>
